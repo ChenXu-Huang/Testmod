@@ -1,6 +1,7 @@
 package com.chenxu.testmod;
 
 import net.minecraft.core.registries.Registries;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
@@ -34,7 +35,9 @@ public class ModRegister {
     // Add items to my CreativeModeTab
     public static final RegistryObject<CreativeModeTab> TEST_TAB = CREATIVE_MODE_TABS.register("test_mod",
             () -> CreativeModeTab.builder().withTabsBefore(CreativeModeTabs.COMBAT)
-                    .icon(() -> MY_FOOD.get().getDefaultInstance()).displayItems((parameters, output) -> {
+                    .title(Component.translatable("testmod"))
+                    .icon(() -> MY_BLOCK_ITEM.get().getDefaultInstance())
+                    .displayItems((parameters, output) -> {
                         output.accept(MY_FOOD.get());
                         output.accept(MY_BLOCK_ITEM.get());
                     }).build());

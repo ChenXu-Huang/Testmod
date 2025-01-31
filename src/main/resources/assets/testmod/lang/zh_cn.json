@@ -1,3 +1,4 @@
 {
-    "block.testmod.my_block": "我的方块"
+    "block.testmod.my_block": "我的方块",
+    "item.testmod.my_food": "我的食物"
 }

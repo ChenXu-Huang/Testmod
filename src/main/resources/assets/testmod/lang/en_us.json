@@ -1,3 +1,4 @@
 {
-    "block.testmod.my_block": "my block"
+    "block.testmod.my_block": "my block",
+    "item.testmod.my_food": "my food"
 }
