@@ -38,9 +38,9 @@ public class ModRegister {
                         output.accept(MY_FOOD.get());
                         output.accept(MY_BLOCK_ITEM.get());
                     }).build());
-    
+
     // Register all things
-    public static void register(IEventBus modEventBus){
+    public static void register(IEventBus modEventBus) {
         BLOCKS.register(modEventBus);
         ITEMS.register(modEventBus);
         CREATIVE_MODE_TABS.register(modEventBus);
